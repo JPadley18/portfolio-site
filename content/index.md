@@ -9,11 +9,11 @@ image: images/me.jpg
 links:
   - label: Check out my GitHub
     to: https://github.com/JPadley18
-    icon: i-lucide-github
+    icon: i-simple-icons-github
     variant: outline
   - label: Connect on LinkedIn
     to: https://www.linkedin.com/in/jacob-padley/
-    icon: i-lucide-linkedin
+    icon: i-simple-icons-linkedin
     variant: outline
 ---
 Jacob Padley

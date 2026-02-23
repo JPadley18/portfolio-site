@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <UPageHero class="w-3/4 mx-auto" orientation="horizontal" reverse>
+  <UPageHero orientation="horizontal">
     <template #title>
       <slot mdc-unwrap="p" />
     </template>
