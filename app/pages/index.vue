@@ -9,6 +9,6 @@ useSeoMeta({
 
 <template>
   <UPage v-if="home">
-    <HomeHero :page="home" />
+    <ContentRenderer :value="home" />
   </UPage>
 </template>

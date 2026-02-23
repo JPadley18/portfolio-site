@@ -1,11 +1,19 @@
 <script setup lang="ts">
-import type { HomeCollectionItem } from '@nuxt/content';
-
-defineProps<{
-  page: HomeCollectionItem;
+const props = defineProps<{
+  image: string,
 }>();
 </script>
 
 <template>
-  <UPageHero :title="page.title" />
+  <UPageHero class="w-3/4 mx-auto" orientation="horizontal" reverse>
+    <template #title>
+      <slot mdc-unwrap="p" />
+    </template>
+
+    <img :src="props.image" class="w-50 h-50 aspect-square rounded-full" />
+
+    <template #description>
+      <slot name="description" />
+    </template>
+  </UPageHero>
 </template>
