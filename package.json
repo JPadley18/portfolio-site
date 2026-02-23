@@ -7,10 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "fmt": "prettier . --write",
+    "lint": "eslint"
   },
   "dependencies": {
+    "@nuxt/content": "^3.11.2",
+    "@nuxt/eslint": "^1.15.1",
+    "@nuxt/ui": "^4.4.0",
+    "better-sqlite3": "^12.6.2",
     "nuxt": "^4.3.1",
+    "prettier": "^3.8.1",
     "vue": "^3.5.28",
     "vue-router": "^4.6.4"
   }
