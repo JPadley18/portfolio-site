@@ -17,8 +17,6 @@ const links = [
 
 <template>
   <div>
-    <UNavigationMenu
-    :items="links"
-    />
+    <UNavigationMenu :items="links" />
   </div>
 </template>

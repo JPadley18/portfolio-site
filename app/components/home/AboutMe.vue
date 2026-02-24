@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  image: string,
+  image: string;
 }>();
 </script>
 

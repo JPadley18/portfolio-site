@@ -3,23 +3,26 @@ title: 'Jacob Padley'
 description: 'Welcome to my portfolio site!'
 ---
 
-::home-hero
----
+## ::home-hero
+
 image: images/me.jpg
 links:
-  - label: Check out my GitHub
-    to: https://github.com/JPadley18
-    icon: i-simple-icons-github
-    variant: outline
-  - label: Connect on LinkedIn
-    to: https://www.linkedin.com/in/jacob-padley/
-    icon: i-simple-icons-linkedin
-    variant: outline
-  - label: My Projects
-    to: /projects
-    variant: solid
-    trailingIcon: i-lucide-arrow-right
+
+- label: Check out my GitHub
+  to: https://github.com/JPadley18
+  icon: i-simple-icons-github
+  variant: outline
+- label: Connect on LinkedIn
+  to: https://www.linkedin.com/in/jacob-padley/
+  icon: i-simple-icons-linkedin
+  variant: outline
+- label: My Projects
+  to: /projects
+  variant: solid
+  trailingIcon: i-lucide-arrow-right
+
 ---
+
 Jacob Padley
 
 #description
