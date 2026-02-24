@@ -3,8 +3,8 @@ title: 'Jacob Padley'
 description: 'Welcome to my portfolio site!'
 ---
 
-## ::home-hero
-
+::home-hero
+---
 image: images/me.jpg
 links:
 
@@ -20,7 +20,6 @@ links:
   to: /projects
   variant: solid
   trailingIcon: i-lucide-arrow-right
-
 ---
 
 Jacob Padley

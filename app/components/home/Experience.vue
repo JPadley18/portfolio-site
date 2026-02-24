@@ -8,7 +8,14 @@ const { data: items } = await useAsyncData(() => queryCollection('experience').a
       <slot name="title" />
     </template>
     <template #description>
-      <UTimeline v-if="items" :items />
+      <UTimeline
+        v-if="items"
+        :ui="{
+          title: 'text-2xl font-bold mb-2',
+          date: 'text-md',
+        }"
+        :items
+      />
     </template>
   </UPageSection>
 </template>

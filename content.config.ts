@@ -15,12 +15,12 @@ export default defineContentConfig({
       source: 'education/*.md',
     }),
     experience: defineCollection({
-      type: 'data',
+      type: 'page',
       source: 'experience/*.md',
       schema: z.object({
         title: z.string(),
-        company: z.string(),
-        time: z.string(),
+        date: z.string(),
+        description: z.string(),
       }),
     }),
     projects: defineCollection({
