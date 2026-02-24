@@ -7,19 +7,19 @@ export default defineContentConfig({
       source: 'index.md',
     }),
     achievements: defineCollection({
-      type: '',
+      type: 'data',
       source: 'achievements/*.md',
     }),
     education: defineCollection({
-      type: '',
+      type: 'data',
       source: 'education/*.md',
     }),
     experience: defineCollection({
-      type: '',
+      type: 'data',
       source: 'experience/*.md',
     }),
     projects: defineCollection({
-      type: '',
+      type: 'data',
       source: 'projects/*.md',
     }),
   },

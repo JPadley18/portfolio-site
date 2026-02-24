@@ -15,6 +15,10 @@ links:
     to: https://www.linkedin.com/in/jacob-padley/
     icon: i-simple-icons-linkedin
     variant: outline
+  - label: My Projects
+    to: /projects
+    variant: solid
+    trailingIcon: i-lucide-arrow-right
 ---
 Jacob Padley
 
@@ -22,9 +26,9 @@ Jacob Padley
 Hi, I'm Jacob! I'm a Software Engineering Intern at IBM UK, alongisde being in my final year of study for my Computer Science degree at Royal Holloway University of London.
 ::
 
-::home-about-me
+::home-about-me{image="images/me-wide.jpg"}
 #title
-# About Me
+About Me
 
 #description
 Hey! My name is Jacob, and I'm a Computer Science student at Royal Holloway University of London, currently interning at IBM UK as a Software Engineering Intern. I am passionate about many fields in Computer Science, with my main interests being in back-end and full-stack systems, and occasionally video game projects. I've completed many projects in my own time, both solo and with teams. I love to attend Hackathons, and as the President of the Royal Holloway Computing Society I even lead the organisation of my University's annual Hackathon event, Royal Hackaway v9.
