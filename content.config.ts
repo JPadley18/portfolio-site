@@ -13,6 +13,11 @@ export default defineContentConfig({
     education: defineCollection({
       type: 'data',
       source: 'education/*.md',
+      schema: z.object({
+        title: z.string(),
+        date: z.string(),
+        description: z.string(),
+      }),
     }),
     experience: defineCollection({
       type: 'page',

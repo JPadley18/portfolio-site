@@ -40,3 +40,8 @@ Hey! My name is Jacob, and I'm a Computer Science student at Royal Holloway Univ
 #title
 Professional Experience
 ::
+
+::home-education
+#title
+Education
+::
