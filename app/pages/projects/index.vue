@@ -19,6 +19,7 @@ const medalColors: Record<string, string> = {
         :key="project.id"
         v-bind="project"
         orientation="horizontal"
+        :to="project.path"
       >
         <template v-if="project.award" #badge>
           <UIcon name="i-lucide-medal" :class="medalColors[project.award]" />
