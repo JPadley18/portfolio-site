@@ -15,7 +15,16 @@ const { data: items } = await useAsyncData(() => queryCollection('experience').a
           date: 'text-md',
         }"
         :items
-      />
+      >
+      <template #title="{ item }">
+        <ULink :to="item.path" class="text-neutral hover:underline">
+          <span>
+            {{ item.title }}
+            <UIcon name="i-lucide-arrow-right" class="ml-2 pb-2 align-middle" />
+          </span>
+        </ULink>
+      </template>
+    </UTimeline>
     </template>
   </UPageSection>
 </template>
