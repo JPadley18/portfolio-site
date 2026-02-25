@@ -7,8 +7,14 @@ export default defineContentConfig({
       source: 'index.md',
     }),
     achievements: defineCollection({
-      type: 'data',
+      type: 'page',
       source: 'achievements/*.md',
+      schema: z.object({
+        title: z.string(),
+        date: z.string(),
+        description: z.string(),
+        image: z.string(),
+      }),
     }),
     education: defineCollection({
       type: 'data',
@@ -29,8 +35,15 @@ export default defineContentConfig({
       }),
     }),
     projects: defineCollection({
-      type: 'data',
+      type: 'page',
       source: 'projects/*.md',
+      schema: z.object({
+        title: z.string(),
+        date: z.string(),
+        description: z.string(),
+        image: z.string(),
+        award: z.string().optional(),
+      }),
     }),
   },
 });

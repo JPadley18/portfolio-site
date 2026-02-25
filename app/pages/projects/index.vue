@@ -1,10 +1,22 @@
 <script setup lang="ts">
-const { data: projects } = await useAsyncData(() => queryCollection('projects').all());
+const { data: projects } = await useAsyncData(() => queryCollection('projects').order('date', 'DESC').all());
+
+const medalColors: Record<string, string> = {
+  'gold': 'text-amber-500',
+  'silver': 'text-zinc-400',
+  'bronze': 'text-yellow-900',
+};
 </script>
 
 <template>
   <UPage v-if="projects">
     <UPageHero title="My Projects" />
-    <p v-for="project in projects" :key="project.id">{{ project.meta.title }}</p>
+    <UBlogPosts>
+      <UBlogPost v-for="project in projects" :key="project.id" v-bind="project">
+        <template v-if="project.award" #badge>
+          <UIcon name="i-lucide-medal" :class="medalColors[project.award]" />
+        </template>
+      </UBlogPost>
+    </UBlogPosts>
   </UPage>
 </template>
