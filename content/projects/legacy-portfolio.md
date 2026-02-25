@@ -1,6 +1,9 @@
 ---
 title: Portfolio Site (Legacy)
-description: Old React + NextJS site
-image: cat.jpg
+description: My old portfolio site was created in TypeScript using React with NextJS and Tailwind CSS.
+image: images/thumbs/padley-tech-thumb.jpg
 date: '2023-03-22'
 ---
+
+My original portfolio website was a project both to document my programming projects and to learn the ins and outs of React. I created the site using React and NextJS, with TailwindCSS and Flowbite for styling and components.
+It served for a great many years, but ultimately my curiosity to learn about Nuxt got the better of me and the site was replaced with the one you are currently viewing!
