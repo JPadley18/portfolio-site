@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <UContainer>
+    <UContainer class="mb-10">
       <AppHeader />
       <slot />
     </UContainer>

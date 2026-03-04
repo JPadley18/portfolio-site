@@ -7,13 +7,14 @@ export default defineContentConfig({
       source: 'index.md',
     }),
     achievements: defineCollection({
-      type: 'page',
+      type: 'data',
       source: 'achievements/*.md',
       schema: z.object({
         title: z.string(),
+        at: z.string(),
         date: z.string(),
-        description: z.string(),
         image: z.string(),
+        to: z.string(),
       }),
     }),
     education: defineCollection({
