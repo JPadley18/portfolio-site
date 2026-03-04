@@ -12,7 +12,10 @@ const medalColors: Record<string, string> = {
 
 <template>
   <UPage v-if="projects">
-    <UPageHero title="My Projects" description="Here you can explore a collection of projects that I have worked on in my free time." />
+    <UPageHero
+      title="My Projects"
+      description="Here you can explore a collection of projects that I have worked on in my free time."
+    />
     <UBlogPosts orientation="horizontal" class="lg:grid-cols-2">
       <UBlogPost
         v-for="project in projects"

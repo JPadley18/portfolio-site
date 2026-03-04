@@ -5,9 +5,17 @@ const { data: achievements } = await useAsyncData(() =>
 </script>
 <template>
   <UPage v-if="achievements">
-    <UPageHero title="My Achievements" description="Here you can find some highlights from what I've been up to over the past few years." />
+    <UPageHero
+      title="My Achievements"
+      description="Here you can find some highlights from what I've been up to over the past few years."
+    />
     <UBlogPosts orientation="vertical">
-      <UBlogPost v-for="achievement in achievements" :key="achievement.id" orientation="horizontal" v-bind="achievement">
+      <UBlogPost
+        v-for="achievement in achievements"
+        :key="achievement.id"
+        orientation="horizontal"
+        v-bind="achievement"
+      >
         <template #description>
           {{ achievement.at }}
         </template>
