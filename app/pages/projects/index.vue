@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Projects',
+});
+
 const { data: projects } = await useAsyncData(() =>
   queryCollection('projects').order('date', 'DESC').all(),
 );

@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   app: {
     head: {
-      title: 'Jacob Padley',
       htmlAttrs: {
         lang: 'en',
       },

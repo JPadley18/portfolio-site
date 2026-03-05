@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Achievements',
+});
+
 const { data: achievements } = await useAsyncData(() =>
   queryCollection('achievements').order('date', 'DESC').all(),
 );

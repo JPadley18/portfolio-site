@@ -1,5 +1,5 @@
 ---
-title: 'Jacob Padley'
+title: 'About Me'
 description: 'Welcome to my portfolio site!'
 ---
 

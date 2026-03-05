@@ -1,6 +1,16 @@
 <script setup lang="ts">
 const path = useRoute().path;
 const { data: page } = await useAsyncData(() => queryCollection('projects').path(path).first());
+
+useHead({
+  titleTemplate: (title) => {
+    return title ? `Projects - ${title} - Jacob Padley` : 'Projects - Jacob Padley';
+  },
+});
+
+useSeoMeta({
+  title: page.value?.title,
+});
 </script>
 
 <template>

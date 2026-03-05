@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  titleTemplate: (title) => {
+    return title ? `${title} - Jacob Padley` : 'Jacob Padley';
+  },
+});
+</script>
 
 <template>
   <div>
