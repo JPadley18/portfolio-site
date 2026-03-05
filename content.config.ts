@@ -15,6 +15,7 @@ export default defineContentConfig({
         date: z.string(),
         image: z.string(),
         to: z.string(),
+        description: z.string(),
       }),
     }),
     education: defineCollection({
