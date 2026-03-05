@@ -3,6 +3,13 @@ title: TouCan
 description: Android app using OpenCV to identify a drinks can using the phone camera and send directions to a Lego Mindstorms robot to navigate to the can.
 image: images/thumbs/toucan-thumb.jpg
 date: '2023-03-21'
+skills:
+  - name: Java
+    icon: i-lucide-coffee
+    color: '#df0638'
+  - name: Android
+    icon: i-simple-icons-android
+    color: '#3DDC84'
 ---
 
 I created the TouCan app as part of a group coursework project in which we were tasked with programming a Lego Mindstorms robot using Java. 

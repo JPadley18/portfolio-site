@@ -4,6 +4,10 @@ description: The company is short-staffed and it's down to you to keep it afloat
 image: images/thumbs/placeholder-thumb.jpg
 date: '2025-05-28'
 award: gold
+skills:
+  - name: Godot
+    icon: i-simple-icons-godotengine
+    color: '#478CBF'
 ---
 
 Placeholder was our team's entry for Hackabury 2025, which took home the overall theme prize for the theme of &quot;Unity&quot;. It was each member of the team's first

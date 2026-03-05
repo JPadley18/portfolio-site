@@ -3,6 +3,19 @@ title: Tuner
 description: A real-time online quiz game that turns your most listened to Spotify tracks into a music quiz for you and your friends!
 image: images/thumbs/tuner-thumb.png
 date: '2024-02-18'
+skills:
+  - name: Go
+    icon: i-simple-icons-go
+    color: '#00ADD8'
+  - name: React
+    icon: i-simple-icons-react
+    color: '#61DAFB'
+  - name: TypeScript
+    icon: i-simple-icons-typescript
+    color: '#3178C6'
+  - name: Docker
+    icon: i-simple-icons-docker
+    color: '#2496ED'
 ---
 
 Tuner was our entry for HackSussex 2024's 24-hour Hackathon event. It is a real-time quiz game (think Kahoot) in which you and your friends log in using your Spotify account,

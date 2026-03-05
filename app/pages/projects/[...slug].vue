@@ -11,9 +11,21 @@ const { data: page } = await useAsyncData(() => queryCollection('projects').path
     <div v-if="page">
       <UPageHero :title="page.title" />
       <UPageSection title="About the Project">
+        <div class="mx-auto">
+          <span v-for="skill in page.skills" :key="skill.name" :style="{ color: skill.color }"
+            ><UIcon :name="skill.icon" class="size-12 mr-5"
+          /></span>
+        </div>
         <ContentRenderer :value="page.body" />
       </UPageSection>
-      <UPageSection title="Key Skills" />
     </div>
+    <UError
+      v-else
+      :error="{
+        statusCode: 404,
+        statusMessage: 'Project Not Found',
+        message: 'This is not the project you are looking for.',
+      }"
+    />
   </div>
 </template>

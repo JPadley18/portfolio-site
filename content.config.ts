@@ -45,6 +45,13 @@ export default defineContentConfig({
         description: z.string(),
         image: z.string(),
         award: z.string().optional(),
+        skills: z.array(
+          z.object({
+            name: z.string(),
+            icon: z.string(),
+            color: z.string(),
+          }),
+        ),
       }),
     }),
   },

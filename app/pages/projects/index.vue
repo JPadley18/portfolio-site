@@ -27,6 +27,17 @@ const medalColors: Record<string, string> = {
         <template v-if="project.award" #badge>
           <UIcon name="i-lucide-medal" :class="medalColors[project.award]" />
         </template>
+        <template #description>
+          <p class="mb-3">{{ project.description }}</p>
+          <UBadge
+            v-for="skill in project.skills"
+            :key="skill.name"
+            :icon="skill.icon"
+            class="mr-2 mb-1"
+            variant="outline"
+            >{{ skill.name }}</UBadge
+          >
+        </template>
       </UBlogPost>
     </UBlogPosts>
   </UPage>

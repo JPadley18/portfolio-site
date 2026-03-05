@@ -4,6 +4,19 @@ description: 1 vs. 1 online puzzle game based on the popular LinkedIn puzzle gam
 image: images/thumbs/it4-thumb.png
 date: '2025-05-24'
 award: bronze
+skills:
+  - name: Go
+    icon: i-simple-icons-go
+    color: '#00ADD8'
+  - name: React
+    icon: i-simple-icons-react
+    color: '#61DAFB'
+  - name: TypeScript
+    icon: i-simple-icons-typescript
+    color: '#3178C6'
+  - name: Docker
+    icon: i-simple-icons-docker
+    color: '#2496ED'
 ---
 
 It Takes Two to Tango was our project for Royal Hackaway V8, the eighth annual 24-hour hackathon event hosted by the Royal Holloway Computing Society. The game

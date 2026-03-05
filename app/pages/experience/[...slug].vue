@@ -13,5 +13,13 @@ const { data: page } = await useAsyncData(() => queryCollection('experience').pa
       </UPageSection>
       <UPageSection title="Key Skills" />
     </div>
+    <UError
+      v-else
+      :error="{
+        statusCode: 404,
+        statusMessage: 'Experience Not Found',
+        message: 'This is not the experience you are looking for.',
+      }"
+    />
   </div>
 </template>

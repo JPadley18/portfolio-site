@@ -3,6 +3,13 @@ title: DataIker Facial Recognition
 description: My machine learning project created during my work experience at Data Iku. Software for the Raspberry Pi that uses machine learning and OpenCV to identify and greet office members by name using facial recognition.
 image: images/thumbs/dataiker-thumb.jpg
 date: '2019-07-26'
+skills:
+  - name: Python
+    icon: i-simple-icons-python
+    color: '#3776AB'
+  - name: Raspberry Pi
+    icon: i-simple-icons-raspberrypi
+    color: '#A22846'
 ---
 
 I created this project during my work experience at data science company DataIku. It consists of a Raspberry Pi that uses OpenCV and an onboard 

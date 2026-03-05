@@ -3,6 +3,16 @@ title: Cordle
 description: Competitive Wordle bot for Discord. Complete with an elo system so that you can prove that you're better than your friends once and for all.
 image: images/thumbs/cordle-thumb.png
 date: '2023-02-5'
+skills:
+  - name: Go
+    icon: i-simple-icons-go
+    color: '#00ADD8'
+  - name: JavaScript
+    icon: i-simple-icons-javascript
+    color: '#F7DF1E'
+  - name: Docker
+    icon: i-simple-icons-docker
+    color: '#2496ED'
 ---
 
 Cordle began as a project for Royal Hackaway V6, a 24-hour hackathon event run by the Royal Holloway Computing Society. It consists of a Discord Bot which, 

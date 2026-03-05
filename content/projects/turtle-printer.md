@@ -3,6 +3,13 @@ title: Turtle Printer
 description: A software I created to for new students joining the Royal Holloway Computing Society. It allows new programmers to write Python code that draws images using the Turtle library and print their creations on a thermal receipt printer.
 image: images/thumbs/turtle-thumb.jpg
 date: '2023-09-18'
+skills:
+  - name: Python
+    icon: i-simple-icons-python
+    color: '#3776AB'
+  - name: Raspberry Pi
+    icon: i-simple-icons-raspberrypi
+    color: '#A22846'
 ---
 
 Turtle Printer is a software written in Python using Tkinter as an extension to the popular Python Turtle library, which provides an easy, beginner 
