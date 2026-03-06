@@ -1,7 +1,7 @@
 ---
 title: Portfolio Site
 description: A ground-up rewrite of my portfolio website using Vue and Nuxt. The very site you are now on!
-image: cat.jpg
+image: images/thumbs/portfolio-thumb.jpg
 date: '2026-02-25'
 skills:
   - name: Nuxt
@@ -13,6 +13,10 @@ skills:
   - name: TypeScript
     icon: i-simple-icons-typescript
     color: '#3178C6'
+carousel:
+  - 'images/projects/portfolio/portfolio-1.jpg'
+  - 'images/projects/portfolio/portfolio-2.jpg'
+  - 'images/projects/portfolio/portfolio-3.jpg'
 ---
 
 Back in 2023, I wrote my original portfolio site in NextJS. This site was the most advanced one I had personally written to date, and it served its purpose well for nearly three years. However,

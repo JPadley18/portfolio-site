@@ -6,9 +6,17 @@
   --font-sans: 'Outfit', sans-serif;
 
   --color-primary: #00d4ff;
+  --color-primary-light: #0077cc;
   --color-background: #0d1117;
+  --color-background-light: #eef2f7;
 }
 
 :root {
+  --ui-bg: var(--color-background-light);
+  --ui-primary: var(--color-primary-light);
+}
+
+.dark {
   --ui-bg: var(--color-background);
+  --ui-primary: var(--color-primary);
 }

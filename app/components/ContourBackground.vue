@@ -7,6 +7,7 @@ const props = defineProps<{
   speed: number;
   scale: number;
   strokeWidth: number;
+  opacity: number;
 }>();
 
 const svgRef = useTemplateRef('svgRef');
@@ -54,9 +55,9 @@ onMounted(() => {
       .join('path')
       .attr('d', path)
       .attr('fill', 'none')
-      .attr('stroke', '#00d4ff')
+      .attr('stroke', getComputedStyle(document.documentElement).getPropertyValue('--ui-primary'))
       .attr('stroke-width', props.strokeWidth)
-      .attr('opacity', (d, i) => 0.07 + i * 0.001);
+      .attr('opacity', (d, i) => props.opacity + i * 0.001);
 
     time += props.speed;
     animationId = requestAnimationFrame(render);
@@ -84,7 +85,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="fixed inset-0 -z-10 w-full h-full overflow-hidden bg-background">
+  <div
+    class="fixed inset-0 -z-10 w-full h-full overflow-hidden bg-background-light dark:bg-background"
+  >
     <svg ref="svgRef" class="w-full h-full block" />
   </div>
 </template>

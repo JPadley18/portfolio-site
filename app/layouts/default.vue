@@ -3,7 +3,9 @@
 <template>
   <div>
     <UContainer class="mb-10">
-      <AppHeader />
+      <ClientOnly fallback-tag="header">
+        <AppHeader />
+      </ClientOnly>
       <slot />
     </UContainer>
   </div>

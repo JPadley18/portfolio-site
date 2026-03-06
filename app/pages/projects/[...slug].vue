@@ -27,6 +27,7 @@ useSeoMeta({
         }"
       />
       <UCarousel
+        v-if="page.carousel.length > 1"
         v-slot="{ item }"
         :items="page.carousel"
         class="mx-auto w-11/12 md:w-1/2"
@@ -41,6 +42,12 @@ useSeoMeta({
           loading="lazy"
         />
       </UCarousel>
+      <NuxtImg
+        v-else
+        :src="page.carousel[0]"
+        class="rounded-lg mx-auto w-auto h-80 lg:h-100 object-cover"
+        loading="lazy"
+      />
       <UPageSection
         title="About the Project"
         :ui="{
