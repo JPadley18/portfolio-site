@@ -13,27 +13,6 @@ const { data: achievements } = await useAsyncData(() =>
       title="My Achievements"
       description="Here you can find some highlights from what I've been up to over the past few years."
     />
-    <UBlogPosts orientation="vertical">
-      <UBlogPost
-        v-for="achievement in achievements"
-        :key="achievement.id"
-        orientation="horizontal"
-        v-bind="achievement"
-        target="_blank"
-      >
-        <template #title>
-          <h1>
-            <span class="mr-2">{{ achievement.title }}</span
-            ><UIcon name="i-lucide-external-link" />
-          </h1>
-        </template>
-        <template #description>
-          <div>
-            <p class="mb-3">{{ achievement.at }}</p>
-            <p>{{ achievement.description }}</p>
-          </div>
-        </template>
-      </UBlogPost>
-    </UBlogPosts>
+    <AchievementsList :achievements />
   </UPage>
 </template>
