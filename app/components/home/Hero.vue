@@ -5,11 +5,12 @@ const props = defineProps<{
 </script>
 
 <template>
-  <UPageHero orientation="horizontal">
-    <template #title>
-      <slot mdc-unwrap="p" />
-    </template>
-
+  <UPageHero
+    orientation="horizontal"
+    :ui="{
+      title: 'font-extrabold font-heading',
+    }"
+  >
     <NuxtImg :src="props.image" class="hidden lg:block w-50 h-50 aspect-square rounded-full" />
 
     <template #description>

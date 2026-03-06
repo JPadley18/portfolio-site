@@ -19,7 +19,13 @@ useSeoMeta({
       >Return to Projects</UButton
     >
     <div v-if="page">
-      <UPageHeader :title="page.title" class="mb-5" />
+      <UPageHeader
+        :title="page.title"
+        class="mb-5"
+        :ui="{
+          title: 'font-heading',
+        }"
+      />
       <UCarousel
         v-slot="{ item }"
         :items="page.carousel"
@@ -35,7 +41,12 @@ useSeoMeta({
           loading="lazy"
         />
       </UCarousel>
-      <UPageSection title="About the Project">
+      <UPageSection
+        title="About the Project"
+        :ui="{
+          title: 'font-heading',
+        }"
+      >
         <ProjectsTechStack :items="page.skills" />
         <ContentRenderer :value="page.body" />
       </UPageSection>

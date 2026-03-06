@@ -5,24 +5,22 @@ description: 'Welcome to my portfolio site!'
 
 ::home-hero
 ---
+title: Jacob Padley
 image: images/me.jpg
 links:
-
-- label: Check out my GitHub
-  to: https://github.com/JPadley18
-  icon: i-simple-icons-github
-  variant: outline
-- label: Connect on LinkedIn
-  to: https://www.linkedin.com/in/jacob-padley/
-  icon: i-simple-icons-linkedin
-  variant: outline
-- label: My Projects
-  to: /projects
-  variant: solid
-  trailingIcon: i-lucide-arrow-right
+  - label: Check out my GitHub
+    to: https://github.com/JPadley18
+    icon: i-simple-icons-github
+    variant: outline
+  - label: Connect on LinkedIn
+    to: https://www.linkedin.com/in/jacob-padley/
+    icon: i-simple-icons-linkedin
+    variant: outline
+  - label: My Projects
+    to: /projects
+    variant: solid
+    trailingIcon: i-lucide-arrow-right
 ---
-
-Jacob Padley
 
 #description
 Hi, I'm Jacob! I'm a Software Engineering Intern at IBM UK, alongisde being in my final year of study for my Computer Science degree at Royal Holloway University of London.
@@ -38,7 +36,7 @@ Hey! My name is Jacob, and I'm a Computer Science student at Royal Holloway Univ
 
 ::home-experience
 #title
-Professional Experience
+Experience
 ::
 
 ::home-education

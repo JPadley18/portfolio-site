@@ -13,7 +13,14 @@ const medalColors: Record<string, string> = {
 </script>
 
 <template>
-  <UBlogPost v-bind="project" orientation="horizontal" :to="project.path">
+  <UBlogPost
+    v-bind="project"
+    orientation="horizontal"
+    :to="project.path"
+    :ui="{
+      title: 'font-heading font-bold',
+    }"
+  >
     <template v-if="project.award" #badge>
       <UIcon name="i-lucide-medal" :class="medalColors[project.award]" />
     </template>

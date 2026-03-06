@@ -12,6 +12,9 @@ const { data: achievements } = await useAsyncData(() =>
     <UPageHero
       title="My Achievements"
       description="Here you can find some highlights from what I've been up to over the past few years."
+      :ui="{
+        title: 'font-heading',
+      }"
     />
     <AchievementsList :achievements />
   </UPage>

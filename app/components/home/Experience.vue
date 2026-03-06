@@ -3,7 +3,14 @@ const { data: items } = await useAsyncData(() => queryCollection('experience').a
 </script>
 
 <template>
-  <UPageSection orientation="horizontal" icon="i-lucide-briefcase">
+  <UPageSection
+    class="w-full"
+    orientation="horizontal"
+    icon="i-lucide-briefcase"
+    :ui="{
+      title: 'font-heading',
+    }"
+  >
     <template #title>
       <slot name="title" />
     </template>
@@ -11,7 +18,7 @@ const { data: items } = await useAsyncData(() => queryCollection('experience').a
       <UTimeline
         v-if="items"
         :ui="{
-          title: 'text-2xl font-bold mb-2',
+          title: 'text-2xl font-bold mb-2 font-heading',
           date: 'text-md',
         }"
         :items

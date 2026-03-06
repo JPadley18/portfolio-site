@@ -5,7 +5,13 @@ const props = defineProps<{
 </script>
 
 <template>
-  <UPageSection icon="i-lucide-user" orientation="horizontal">
+  <UPageSection
+    icon="i-lucide-user"
+    orientation="horizontal"
+    :ui="{
+      title: 'font-heading font-bold',
+    }"
+  >
     <template #title>
       <slot name="title" />
     </template>

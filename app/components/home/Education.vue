@@ -3,7 +3,13 @@ const { data: items } = await useAsyncData(() => queryCollection('education').al
 </script>
 
 <template>
-  <UPageSection orientation="horizontal" icon="i-lucide-graduation-cap">
+  <UPageSection
+    orientation="horizontal"
+    icon="i-lucide-graduation-cap"
+    :ui="{
+      title: 'font-heading',
+    }"
+  >
     <template #title>
       <slot name="title" />
     </template>
@@ -11,7 +17,7 @@ const { data: items } = await useAsyncData(() => queryCollection('education').al
       <UTimeline
         v-if="items"
         :ui="{
-          title: 'text-2xl font-bold mb-2',
+          title: 'font-heading text-2xl font-bold mb-2',
           date: 'text-md',
         }"
         :items

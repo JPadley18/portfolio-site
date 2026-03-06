@@ -7,7 +7,14 @@ defineProps<{
 </script>
 
 <template>
-  <UBlogPost orientation="horizontal" v-bind="achievement" target="_blank">
+  <UBlogPost
+    orientation="horizontal"
+    v-bind="achievement"
+    target="_blank"
+    :ui="{
+      title: 'font-heading font-bold',
+    }"
+  >
     <template #title>
       <span class="mr-2">{{ achievement.title }}</span
       ><UIcon name="i-lucide-external-link" />

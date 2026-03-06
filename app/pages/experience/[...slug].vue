@@ -17,11 +17,27 @@ useSeoMeta({
   <div>
     <UButton to="/" icon="i-lucide-arrow-left" variant="outline" class="mt-5">Return Home</UButton>
     <div v-if="page">
-      <UPageHero :title="page.title" :headline="page.date" />
-      <UPageSection title="About the role">
+      <UPageHero
+        :title="page.title"
+        :headline="page.date"
+        :ui="{
+          title: 'font-heading',
+        }"
+      />
+      <UPageSection
+        title="About the role"
+        :ui="{
+          title: 'font-heading',
+        }"
+      >
         <ContentRenderer :value="page.body" />
       </UPageSection>
-      <UPageSection title="Key Skills">
+      <UPageSection
+        title="Key Skills"
+        :ui="{
+          title: 'font-heading',
+        }"
+      >
         <ProjectsTechStack :items="page.skills" />
       </UPageSection>
     </div>
