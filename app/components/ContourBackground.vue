@@ -8,6 +8,7 @@ const props = defineProps<{
   scale: number;
   strokeWidth: number;
   opacity: number;
+  scrollMultiplier: number;
 }>();
 
 const svgRef = useTemplateRef('svgRef');
@@ -26,6 +27,9 @@ onMounted(() => {
   const noise = createNoise3D();
   let values = new Float64Array(gridWidth * gridHeight);
   let time = 0;
+  let lastScrollY = window.scrollY;
+  let currentSpeed = props.speed;
+  const scrollSmoothing = 0.05;
 
   const contours = d3.contours().thresholds(d3.range(-1, 1, 0.15));
   const path = d3.geoPath().projection(
@@ -59,7 +63,15 @@ onMounted(() => {
       .attr('stroke-width', props.strokeWidth)
       .attr('opacity', (d, i) => props.opacity + i * 0.001);
 
-    time += props.speed;
+    const currentScrollY = window.scrollY;
+    const scrollDelta = Math.abs(currentScrollY - lastScrollY);
+    lastScrollY = currentScrollY;
+
+    const targetSpeed = props.speed + scrollDelta * props.scrollMultiplier;
+
+    currentSpeed += (targetSpeed - currentSpeed) * scrollSmoothing;
+
+    time += currentSpeed;
     animationId = requestAnimationFrame(render);
   };
 

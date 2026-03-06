@@ -16,6 +16,7 @@ useHead({
           :scale="50"
           :stroke-width="1.5"
           :opacity="0.07"
+          :scroll-multiplier="0.00005"
         />
       </ClientOnly>
 
