@@ -10,7 +10,7 @@ const props = defineProps<{
       <slot name="title" />
     </template>
 
-    <img class="rounded-xl" :src="props.image" />
+    <NuxtImg class="rounded-xl" :src="props.image" />
 
     <template #description>
       <slot name="description" />
