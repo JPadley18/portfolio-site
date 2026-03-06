@@ -2,6 +2,10 @@
 const path = useRoute().path;
 const { data: page } = await useAsyncData(() => queryCollection('projects').path(path).first());
 
+definePageMeta({
+  hideNav: true,
+});
+
 useHead({
   titleTemplate: (title) => {
     return title ? `Projects - ${title} - Jacob Padley` : 'Projects - Jacob Padley';
