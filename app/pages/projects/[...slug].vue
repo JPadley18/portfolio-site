@@ -21,11 +21,7 @@ useSeoMeta({
     <div v-if="page">
       <UPageHero :title="page.title" />
       <UPageSection title="About the Project">
-        <div class="mx-auto">
-          <span v-for="skill in page.skills" :key="skill.name" :style="{ color: skill.color }"
-            ><UIcon :name="skill.icon" class="size-12 mr-5"
-          /></span>
-        </div>
+        <ProjectsTechStack :items="page.skills" />
         <ContentRenderer :value="page.body" />
       </UPageSection>
     </div>
