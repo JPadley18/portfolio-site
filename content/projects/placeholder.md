@@ -8,6 +8,8 @@ skills:
   - name: Godot
     icon: i-simple-icons-godotengine
     color: '#478CBF'
+carousel:
+  - 'images/projects/placeholder/placeholder-1.jpg'
 ---
 
 Placeholder was our team's entry for Hackabury 2025, which took home the overall theme prize for the theme of &quot;Unity&quot;. It was each member of the team's first

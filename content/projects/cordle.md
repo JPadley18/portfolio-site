@@ -13,6 +13,10 @@ skills:
   - name: Docker
     icon: i-simple-icons-docker
     color: '#2496ED'
+carousel:
+  - 'images/projects/cordle/cordle-1.png'
+  - 'images/projects/cordle/cordle-2.jpg'
+  - 'images/projects/cordle/cordle-3.jpg'
 ---
 
 Cordle began as a project for Royal Hackaway V6, a 24-hour hackathon event run by the Royal Holloway Computing Society. It consists of a Discord Bot which, 

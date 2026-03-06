@@ -17,6 +17,11 @@ skills:
   - name: Docker
     icon: i-simple-icons-docker
     color: '#2496ED'
+carousel:
+  - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-1.png'
+  - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-2.png'
+  - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-3.png'
+  - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-4.png'
 ---
 
 It Takes Two to Tango was our project for Royal Hackaway V8, the eighth annual 24-hour hackathon event hosted by the Royal Holloway Computing Society. The game

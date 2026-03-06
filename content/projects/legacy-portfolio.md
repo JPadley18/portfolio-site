@@ -13,6 +13,8 @@ skills:
   - name: TypeScript
     icon: i-simple-icons-typescript
     color: '#3178C6'
+carousel:
+  - 'images/projects/legacy-portfolio/legacy-portfolio-1.jpg'
 ---
 
 My original portfolio website was a project both to document my programming projects and to learn the ins and outs of React. I created the site using React and NextJS, with TailwindCSS and Flowbite for styling and components.

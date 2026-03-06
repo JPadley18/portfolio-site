@@ -17,6 +17,9 @@ skills:
   - name: Docker
     icon: i-simple-icons-docker
     color: '#2496ED'
+carousel:
+  - 'images/projects/hack-and-seek/hack-and-seek-1.jpg'
+  - 'images/projects/hack-and-seek/hack-and-seek-2.jpg'
 ---
 
 Hack & Seek was our team's entry for HackLondon 2026. We chose to compete for the Societies' Track, titled "Build for 2036", in which the goal was to solve a problem that will exist ten years from

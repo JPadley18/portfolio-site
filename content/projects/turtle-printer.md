@@ -10,6 +10,8 @@ skills:
   - name: Raspberry Pi
     icon: i-simple-icons-raspberrypi
     color: '#A22846'
+carousel:
+  - 'images/projects/turtle-printer/turtle-printer-1.jpg'
 ---
 
 Turtle Printer is a software written in Python using Tkinter as an extension to the popular Python Turtle library, which provides an easy, beginner 

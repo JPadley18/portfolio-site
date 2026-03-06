@@ -19,7 +19,22 @@ useSeoMeta({
       >Return to Projects</UButton
     >
     <div v-if="page">
-      <UPageHero :title="page.title" />
+      <UPageHeader :title="page.title" class="mb-5" />
+      <UCarousel
+        v-slot="{ item }"
+        :items="page.carousel"
+        class="mx-auto w-11/12 md:w-1/2"
+        loop
+        arrows
+        dots
+        :autoplay="{ delay: 6000 }"
+      >
+        <NuxtImg
+          :src="item"
+          class="rounded-lg mx-auto w-auto h-80 lg:h-100 object-cover"
+          loading="lazy"
+        />
+      </UCarousel>
       <UPageSection title="About the Project">
         <ProjectsTechStack :items="page.skills" />
         <ContentRenderer :value="page.body" />

@@ -10,6 +10,8 @@ skills:
   - name: Raspberry Pi
     icon: i-simple-icons-raspberrypi
     color: '#A22846'
+carousel:
+  - 'images/projects/dataiku/dataiku-1.jpg'
 ---
 
 I created this project during my work experience at data science company DataIku. It consists of a Raspberry Pi that uses OpenCV and an onboard 

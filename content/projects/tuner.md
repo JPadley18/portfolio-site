@@ -16,6 +16,11 @@ skills:
   - name: Docker
     icon: i-simple-icons-docker
     color: '#2496ED'
+carousel:
+  - 'images/projects/tuner/tuner-1.png'
+  - 'images/projects/tuner/tuner-2.png'
+  - 'images/projects/tuner/tuner-3.png'
+  - 'images/projects/tuner/tuner-4.png'
 ---
 
 Tuner was our entry for HackSussex 2024's 24-hour Hackathon event. It is a real-time quiz game (think Kahoot) in which you and your friends log in using your Spotify account,

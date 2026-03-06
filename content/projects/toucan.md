@@ -10,6 +10,8 @@ skills:
   - name: Android
     icon: i-simple-icons-android
     color: '#3DDC84'
+carousel:
+  - 'images/projects/toucan/toucan-1.jpg'
 ---
 
 I created the TouCan app as part of a group coursework project in which we were tasked with programming a Lego Mindstorms robot using Java. 

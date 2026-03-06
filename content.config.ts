@@ -52,6 +52,7 @@ export default defineContentConfig({
             color: z.string(),
           }),
         ),
+        carousel: z.array(z.string()),
       }),
     }),
   },
