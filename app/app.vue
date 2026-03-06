@@ -9,6 +9,10 @@ useHead({
 <template>
   <div>
     <UApp>
+      <ClientOnly>
+        <ContourBackground :cell-size="20" :speed="0.00005" :scale="50" :stroke-width="1.5" />
+      </ClientOnly>
+
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
