@@ -21,7 +21,9 @@ useSeoMeta({
       <UPageSection title="About the role">
         <ContentRenderer :value="page.body" />
       </UPageSection>
-      <UPageSection title="Key Skills" />
+      <UPageSection title="Key Skills">
+        <ProjectsTechStack :items="page.skills" />
+      </UPageSection>
     </div>
     <UError
       v-else

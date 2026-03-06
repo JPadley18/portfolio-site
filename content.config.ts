@@ -25,6 +25,7 @@ export default defineContentConfig({
         title: z.string(),
         date: z.string(),
         description: z.string(),
+        icon: z.string(),
       }),
     }),
     experience: defineCollection({
@@ -34,6 +35,14 @@ export default defineContentConfig({
         title: z.string(),
         date: z.string(),
         description: z.string(),
+        icon: z.string(),
+        skills: z.array(
+          z.object({
+            name: z.string(),
+            icon: z.string(),
+            color: z.string(),
+          }),
+        ),
       }),
     }),
     projects: defineCollection({
