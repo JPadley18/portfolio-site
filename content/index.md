@@ -9,7 +9,7 @@ title: Jacob Padley
 image: images/me.jpg
 links:
   - label: Check out my GitHub
-    to: https://github.com/JPadley18
+    to: https://github.com/jacob-padley
     target: _blank
     icon: i-simple-icons-github
     variant: outline

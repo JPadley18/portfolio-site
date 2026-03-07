@@ -12,6 +12,10 @@ skills:
     color: '#A22846'
 carousel:
   - 'images/projects/turtle-printer/turtle-printer-1.jpg'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/rhul-compsoc/turtle-printer
 ---
 
 Turtle Printer is a software written in Python using Tkinter as an extension to the popular Python Turtle library, which provides an easy, beginner 

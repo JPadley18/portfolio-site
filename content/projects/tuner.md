@@ -21,6 +21,13 @@ carousel:
   - 'images/projects/tuner/tuner-2.png'
   - 'images/projects/tuner/tuner-3.png'
   - 'images/projects/tuner/tuner-4.png'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/j-incorp/tuner
+  - name: Devpost Page
+    icon: i-simple-icons-devpost
+    to: https://devpost.com/software/tuner-47zkyn
 ---
 
 Tuner was our entry for HackSussex 2024's 24-hour Hackathon event. It is a real-time quiz game (think Kahoot) in which you and your friends log in using your Spotify account,

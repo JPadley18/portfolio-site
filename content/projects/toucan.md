@@ -12,6 +12,10 @@ skills:
     color: '#3DDC84'
 carousel:
   - 'images/projects/toucan/toucan-1.jpg'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/jacob-padley/TouCan
 ---
 
 I created the TouCan app as part of a group coursework project in which we were tasked with programming a Lego Mindstorms robot using Java. 

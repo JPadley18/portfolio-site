@@ -9,17 +9,17 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen overflow-x-hidden">
     <UApp>
       <ClientOnly>
         <ContourBackground
-          :cell-size="20"
-          :mobile-cell-size="40"
-          :speed="0.00005"
+          :cell-size="30"
+          :mobile-cell-size="30"
+          :speed="0.005"
           :scale="50"
           :stroke-width="1.5"
-          :opacity="0.07"
-          :scroll-multiplier="0.00004"
+          :opacity="0.09"
+          :scroll-multiplier="0.0025"
         />
       </ClientOnly>
 
