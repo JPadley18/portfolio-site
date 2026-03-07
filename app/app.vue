@@ -9,7 +9,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen overflow-x-hidden">
     <UApp>
       <ClientOnly>
         <ContourBackground
