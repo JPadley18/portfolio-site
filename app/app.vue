@@ -13,13 +13,13 @@ useHead({
     <UApp>
       <ClientOnly>
         <ContourBackground
-          :cell-size="20"
+          :cell-size="30"
           :mobile-cell-size="30"
-          :speed="0.00005"
+          :speed="0.005"
           :scale="50"
           :stroke-width="1.5"
           :opacity="0.09"
-          :scroll-multiplier="0.00004"
+          :scroll-multiplier="0.0025"
         />
       </ClientOnly>
 

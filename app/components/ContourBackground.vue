@@ -41,6 +41,9 @@ onMounted(() => {
   let currentSpeed = props.speed;
   const scrollSmoothing = 0.05;
 
+  // Track the frame time so that the animation remains the same regardless of screen refresh rate.
+  let lastTime = 0;
+
   // Initialise the contour renderer.
   const contours = d3.contours().thresholds(d3.range(-1, 1, 0.15));
   const path = d3.geoPath().projection(
@@ -67,7 +70,13 @@ onMounted(() => {
   );
 
   // Render loop.
-  const render = () => {
+  const render = (currentTime: number) => {
+    if (lastTime === 0) {
+      lastTime = currentTime;
+    }
+    const deltaTime = (currentTime - lastTime) / 1000;
+    lastTime = currentTime;
+
     for (let y = 0, i = 0; y < gridHeight; y++) {
       for (let x = 0; x < gridWidth; x++, i++) {
         values[i] = noise(x / props.scale, y / props.scale, time);
@@ -93,7 +102,7 @@ onMounted(() => {
 
     currentSpeed += (targetSpeed - currentSpeed) * scrollSmoothing;
 
-    time += currentSpeed;
+    time += currentSpeed * deltaTime;
     animationId = requestAnimationFrame(render);
   };
 
@@ -108,7 +117,7 @@ onMounted(() => {
 
   window.addEventListener('resize', handleResize);
 
-  render();
+  animationId = requestAnimationFrame(render);
 });
 
 // Clean up listeners and animation loops when navigating away
