@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
+  title: string;
   image: string;
 }>();
 </script>
@@ -8,9 +9,21 @@ const props = defineProps<{
   <UPageHero
     orientation="horizontal"
     :ui="{
-      title: 'font-bold font-heading',
+      title: 'font-extrabold font-heading',
     }"
   >
+    <template #title>
+      <p
+        v-for="(chunk, i) in title.split(' ')"
+        :key="i"
+        :class="{
+          'text-primary': i % 2 !== 0,
+        }"
+      >
+        {{ chunk }}
+      </p>
+    </template>
+
     <NuxtImg :src="props.image" class="hidden lg:block w-50 h-50 aspect-square rounded-full" />
 
     <template #description>

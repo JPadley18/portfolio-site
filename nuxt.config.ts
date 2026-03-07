@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Syne: [700],
+      Syne: [700, 800],
       Outfit: [400, 700],
     },
   },

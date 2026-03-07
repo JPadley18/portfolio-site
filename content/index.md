@@ -5,7 +5,7 @@ description: 'Welcome to my portfolio site!'
 
 ::home-hero
 ---
-title: Jacob Padley
+title: JACOB PADLEY
 image: images/me.jpg
 links:
   - label: Check out my GitHub
