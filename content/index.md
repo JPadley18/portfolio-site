@@ -10,10 +10,12 @@ image: images/me.jpg
 links:
   - label: Check out my GitHub
     to: https://github.com/JPadley18
+    target: _blank
     icon: i-simple-icons-github
     variant: outline
   - label: Connect on LinkedIn
     to: https://www.linkedin.com/in/jacob-padley/
+    target: _blank
     icon: i-simple-icons-linkedin
     variant: outline
   - label: My Projects
