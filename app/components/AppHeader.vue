@@ -28,7 +28,7 @@ const links = [
     :class="{ '-translate-y-[150%]': !isVisible }"
   >
     <nav
-      class="px-4 py-2 bg-white/60 dark:bg-background/60 backdrop-blur-md rounded-full shadow-lg ring-1 ring-gray-200/50 dark:ring-gray-800/50"
+      class="px-4 py-2 bg-white/60 dark:bg-background/60 backdrop-blur-md rounded-full shadow-lg ring-1 ring-gray-200/50 dark:ring-gray-800/50 transform-gpu will-change-transform"
     >
       <UNavigationMenu
         :items="links"

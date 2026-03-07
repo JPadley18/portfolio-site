@@ -4,6 +4,8 @@ import { createNoise3D } from 'simplex-noise';
 
 const props = defineProps<{
   cellSize: number;
+  // Using a larger cell size on mobile helps with performance
+  mobileCellSize: number;
   speed: number;
   scale: number;
   strokeWidth: number;
@@ -11,39 +13,60 @@ const props = defineProps<{
   scrollMultiplier: number;
 }>();
 
+const getCellSize = () => (window.innerWidth < 768 ? props.mobileCellSize : props.cellSize);
+
 const svgRef = useTemplateRef('svgRef');
 const padding = 2;
 let animationId = 0;
 let handleResize = () => {};
 
 onMounted(() => {
+  // Select the component to draw the contours in.
   const svg = d3.select(svgRef.value);
 
+  // Work out the dimensions of the noise cell grid.
   let width = window.innerWidth;
   let height = window.innerHeight;
   let gridWidth = Math.ceil(width / props.cellSize) + 2 * padding;
   let gridHeight = Math.ceil(height / props.cellSize) + 2 * padding;
 
+  // Set up the noise grid.
   const noise = createNoise3D();
   let values = new Float64Array(gridWidth * gridHeight);
+
+  // Time will move forward as the animation continues, and scroll speed will affect animation
+  // speed.
   let time = 0;
   let lastScrollY = window.scrollY;
   let currentSpeed = props.speed;
   const scrollSmoothing = 0.05;
 
+  // Initialise the contour renderer.
   const contours = d3.contours().thresholds(d3.range(-1, 1, 0.15));
   const path = d3.geoPath().projection(
     d3
       .geoIdentity()
-      .scale(props.cellSize)
-      .translate([-padding * props.cellSize, -padding * props.cellSize]),
+      .scale(getCellSize())
+      .translate([-padding * getCellSize(), -padding * getCellSize()]),
   );
 
+  // Called if the grid is resized.
   const updateGridSize = () => {
     contours.size([gridWidth, gridHeight]);
   };
   updateGridSize();
 
+  // Passively track window scrolling.
+  let targetScrollY = window.scrollY;
+  window.addEventListener(
+    'scroll',
+    () => {
+      targetScrollY = window.scrollY;
+    },
+    { passive: true },
+  );
+
+  // Render loop.
   const render = () => {
     for (let y = 0, i = 0; y < gridHeight; y++) {
       for (let x = 0; x < gridWidth; x++, i++) {
@@ -63,9 +86,8 @@ onMounted(() => {
       .attr('stroke-width', props.strokeWidth)
       .attr('opacity', (d, i) => props.opacity + i * 0.001);
 
-    const currentScrollY = window.scrollY;
-    const scrollDelta = Math.abs(currentScrollY - lastScrollY);
-    lastScrollY = currentScrollY;
+    const scrollDelta = Math.abs(targetScrollY - lastScrollY);
+    lastScrollY = targetScrollY;
 
     const targetSpeed = props.speed + scrollDelta * props.scrollMultiplier;
 
@@ -78,8 +100,8 @@ onMounted(() => {
   handleResize = () => {
     width = window.innerWidth;
     height = window.innerHeight;
-    gridWidth = Math.ceil(width / props.cellSize) + 2 * padding;
-    gridHeight = Math.ceil(height / props.cellSize) + 2 * padding;
+    gridWidth = Math.ceil(width / getCellSize()) + 2 * padding;
+    gridHeight = Math.ceil(height / getCellSize()) + 2 * padding;
     values = new Float64Array(gridWidth * gridHeight);
     updateGridSize();
   };
