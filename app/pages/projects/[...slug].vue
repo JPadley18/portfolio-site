@@ -14,6 +14,11 @@ useHead({
 
 useSeoMeta({
   title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description,
+  ogImage: page.value ? `/${page.value.image}` : '/images/me-wide.jpg',
+  twitterCard: 'summary_large_image',
 });
 </script>
 

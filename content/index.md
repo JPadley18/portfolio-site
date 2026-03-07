@@ -1,6 +1,6 @@
 ---
 title: 'About Me'
-description: 'Welcome to my portfolio site!'
+description: Hi, I'm Jacob! I'm a Software Engineering Intern at IBM UK, alongisde being in my final year of study for my Computer Science degree at Royal Holloway University of London.
 ---
 
 ::home-hero

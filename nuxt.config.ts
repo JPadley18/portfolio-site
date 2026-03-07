@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/content', '@nuxt/image', '@nuxtjs/google-fonts'],
   css: ['~/assets/css/main.css'],
   app: {
