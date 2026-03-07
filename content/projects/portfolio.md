@@ -17,6 +17,10 @@ carousel:
   - 'images/projects/portfolio/portfolio-1.jpg'
   - 'images/projects/portfolio/portfolio-2.jpg'
   - 'images/projects/portfolio/portfolio-3.jpg'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/jacob-padley/portfolio-site
 ---
 
 Back in 2023, I wrote my original portfolio site in NextJS. This site was the most advanced one I had personally written to date, and it served its purpose well for nearly three years. However,

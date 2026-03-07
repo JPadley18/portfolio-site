@@ -52,6 +52,7 @@ useSeoMeta({
         class="rounded-lg mx-auto w-auto h-80 lg:h-100 object-cover"
         loading="lazy"
       />
+      <ProjectsLinks :links="page.links" />
       <UPageSection
         title="About the Project"
         :ui="{

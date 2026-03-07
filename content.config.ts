@@ -62,6 +62,13 @@ export default defineContentConfig({
           }),
         ),
         carousel: z.array(z.string()),
+        links: z.array(
+          z.object({
+            name: z.string(),
+            icon: z.string(),
+            to: z.string(),
+          }),
+        ),
       }),
     }),
   },

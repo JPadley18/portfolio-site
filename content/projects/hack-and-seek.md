@@ -20,6 +20,13 @@ skills:
 carousel:
   - 'images/projects/hack-and-seek/hack-and-seek-1.jpg'
   - 'images/projects/hack-and-seek/hack-and-seek-2.jpg'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/j-incorp/hacklondon-26
+  - name: Devpost Page
+    icon: i-simple-icons-devpost
+    to: https://devpost.com/software/hack-seek
 ---
 
 Hack & Seek was our team's entry for HackLondon 2026. We chose to compete for the Societies' Track, titled "Build for 2036", in which the goal was to solve a problem that will exist ten years from

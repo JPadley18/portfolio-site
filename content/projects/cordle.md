@@ -17,6 +17,16 @@ carousel:
   - 'images/projects/cordle/cordle-1.png'
   - 'images/projects/cordle/cordle-2.jpg'
   - 'images/projects/cordle/cordle-3.jpg'
+links:
+  - name: Legacy GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/j-incorp/cordle-legacy
+  - name: GitHubRepo
+    icon: i-simple-icons-github
+    to: https://github.com/j-incorp/cordle-bot
+  - name: Devpost Page
+    icon: i-simple-icons-devpost
+    to: https://devpost.com/software/cordle
 ---
 
 Cordle began as a project for Royal Hackaway V6, a 24-hour hackathon event run by the Royal Holloway Computing Society. It consists of a Discord Bot which, 

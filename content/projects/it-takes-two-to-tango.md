@@ -22,6 +22,13 @@ carousel:
   - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-2.png'
   - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-3.png'
   - 'images/projects/it-takes-two-to-tango/it-takes-two-to-tango-4.png'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/jacob-padley/it-takes-two-to-tango
+  - name: Devpost Page
+    icon: i-simple-icons-devpost
+    to: https://devpost.com/software/it-takes-two-to-tango
 ---
 
 It Takes Two to Tango was our project for Royal Hackaway V8, the eighth annual 24-hour hackathon event hosted by the Royal Holloway Computing Society. The game

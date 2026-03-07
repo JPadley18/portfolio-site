@@ -10,6 +10,13 @@ skills:
     color: '#478CBF'
 carousel:
   - 'images/projects/placeholder/placeholder-1.jpg'
+links:
+  - name: GitHub Repo
+    icon: i-simple-icons-github
+    to: https://github.com/jacob-padley/hackabury-25
+  - name: Devpost Page
+    icon: i-simple-icons-devpost
+    to: https://devpost.com/software/placeholder-6gk3xb
 ---
 
 Placeholder was our team's entry for Hackabury 2025, which took home the overall theme prize for the theme of &quot;Unity&quot;. It was each member of the team's first

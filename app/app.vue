@@ -14,11 +14,11 @@ useHead({
       <ClientOnly>
         <ContourBackground
           :cell-size="20"
-          :mobile-cell-size="40"
+          :mobile-cell-size="30"
           :speed="0.00005"
           :scale="50"
           :stroke-width="1.5"
-          :opacity="0.07"
+          :opacity="0.09"
           :scroll-multiplier="0.00004"
         />
       </ClientOnly>
