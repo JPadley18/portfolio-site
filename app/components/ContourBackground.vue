@@ -19,6 +19,7 @@ const svgRef = useTemplateRef('svgRef');
 const padding = 2;
 let animationId = 0;
 let handleResize = () => {};
+let handleVisibilityChange = () => {};
 
 onMounted(() => {
   // Select the component to draw the contours in.
@@ -115,7 +116,19 @@ onMounted(() => {
     updateGridSize();
   };
 
+  handleVisibilityChange = () => {
+    if (document.hidden) {
+      // Tab deactivated - kill the animation so it doesn' jump or get stuck.
+      cancelAnimationFrame(animationId);
+    } else {
+      // Tab reactivated, resume gracefully.
+      lastScrollY = window.scrollY;
+      animationId = requestAnimationFrame(render);
+    }
+  };
+
   window.addEventListener('resize', handleResize);
+  window.addEventListener('visibilitychange', handleVisibilityChange);
 
   animationId = requestAnimationFrame(render);
 });
@@ -124,6 +137,8 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (animationId) cancelAnimationFrame(animationId);
   if (handleResize) window.removeEventListener('resize', handleResize);
+  if (handleVisibilityChange)
+    window.removeEventListener('visibilitychange', handleVisibilityChange);
 });
 </script>
 
