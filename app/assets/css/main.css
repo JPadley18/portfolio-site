@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --font-heading: 'Syne', sans-serif;
+  --font-sans: 'Outfit', sans-serif;
+
+  --color-primary: #00d4ff;
+  --color-primary-light: #0077cc;
+  --color-background: #0d1117;
+  --color-background-light: #eef2f7;
+}
+
+:root {
+  --ui-bg: var(--color-background-light);
+  --ui-primary: var(--color-primary-light);
+}
+
+.dark {
+  --ui-bg: var(--color-background);
+  --ui-primary: var(--color-primary);
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
