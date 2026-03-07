@@ -52,6 +52,9 @@ useSeoMeta({
         statusMessage: 'Experience Not Found',
         message: 'This is not the experience you are looking for.',
       }"
+      :ui="{
+        statusMessage: 'font-heading',
+      }"
     />
   </div>
 </template>

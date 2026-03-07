@@ -70,6 +70,9 @@ useSeoMeta({
         statusMessage: 'Project Not Found',
         message: 'This is not the project you are looking for.',
       }"
+      :ui="{
+        statusMessage: 'font-heading',
+      }"
     />
   </div>
 </template>
