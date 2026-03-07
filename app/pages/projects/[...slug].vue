@@ -14,6 +14,11 @@ useHead({
 
 useSeoMeta({
   title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description,
+  ogImage: page.value ? `/${page.value.image}` : '/images/me-wide.jpg',
+  twitterCard: 'summary_large_image',
 });
 </script>
 
@@ -69,6 +74,9 @@ useSeoMeta({
         statusCode: 404,
         statusMessage: 'Project Not Found',
         message: 'This is not the project you are looking for.',
+      }"
+      :ui="{
+        statusMessage: 'font-heading',
       }"
     />
   </div>
