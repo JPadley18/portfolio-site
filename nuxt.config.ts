@@ -12,6 +12,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
+  content: {
+    experimental: { sqliteConnector: 'native' },
+  },
   googleFonts: {
     families: {
       Syne: [700],
