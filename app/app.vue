@@ -27,13 +27,9 @@ useHead({
         <AppHeader v-if="!route.meta.hideNav" />
       </Transition>
 
-      <Transition appear name="app-fade">
-        <div>
-          <NuxtLayout>
-            <NuxtPage />
-          </NuxtLayout>
-        </div>
-      </Transition>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </UApp>
   </div>
 </template>

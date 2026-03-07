@@ -1,8 +1,4 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  if (to.path === from.path) {
-    return;
-  }
-
   const routeOrder = ['/', '/projects', '/achievements'];
 
   let transition;
